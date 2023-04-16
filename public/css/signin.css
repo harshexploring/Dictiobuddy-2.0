@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-color:rgba(0, 0, 0, 0.826) ; */
+    /* background: url("/images/bodybackground.jpg"); */
+    background-blend-mode: screen;
+    background: linear-gradient(120deg, rgb(0, 0, 0), rgb(83, 16, 16));
+    height: 100vh;
+}
+
+.left-image {
+
+    width: 40%;
+    height: 100vh;
+    /* margin:0% 5% 0% 5%; */
+    background: url("/images/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+
+
+
+}
+
+.flyingbooks {
+
+    width: 100%;
+    height: 100vh;
+    /* margin:0% 5% 0% 5%; */
+    background: url("/images/flyingbooks.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -2;
+    right: 0px;
+
+}
+
+
+
+.siginbody {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container {
+    /* border:2px solid white; */
+
+    display: flex;
+    width: 30%;
+    margin: 2% 5% 2% 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.813);
+    border-radius: 10px;
+
+}
+
+.header {
+    /* border:2px solid black; */
+    margin: 5px;
+    height: 20%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.header h1 {
+    margin: 3px;
+    /* color:rgb(0, 228, 244); */
+    color: rgb(252, 252, 252);
+    font-size: 3.5em;
+    /* background-color:rgb(0, 0, 0); */
+    padding: 5px 20px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+
+
+    /* font-family: 'Potta One', cursive; */
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+.header p {
+    color: rgb(0, 224, 240);
+}
+
+
+
+.signin-form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 20px 10px;
+
+    border-radius: 15px;
+
+}
+
+.signin-form .signininputs label {
+    color: rgb(0, 224, 240);
+    margin: 3px;
+
+}
+
+.signin-form .signininputs input {
+    border: 1px solid rgb(0, 224, 240);
+    border-radius: 10px;
+    padding: 0px 2px 0px 2px;
+    ;
+}
+
+#signinpageinfo {
+    height: 10%;
+    /* border:2px solid black; */
+}
+
+#signinpageinfo {
+    color: rgb(0, 224, 240);
+}
+
+.signin-form-container {
+    /* border:2px solid black; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-container .signin-form-container .sign-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.signinformbuttons button a {
+    text-decoration: none;
+    color: rgb(0, 224, 240);
+}
+
+.signinformbuttons button {
+    color: rgb(0, 224, 240);
+    padding: 4px 5px;
+    margin: 2px;
+    border: 1px solid rgb(0, 224, 240);
+    border-radius: 10px;
+    background-color: rgba(110, 224, 255, 0);
+    cursor: pointer;
+}
+
+/* responsive */
+@media only screen and (min-width:200px) and (max-width:500px) {
+
+    .left-image {
+
+        display: none;
+    }
+
+    .flyingbooks {
+
+        width: 100%;
+        height: 100vh;
+        /* margin:0% 5% 0% 5%; */
+        background: url("/images/flyingbooks.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        z-index: -2;
+        right: 0px;
+
+    }
+
+    .form-container {
+        /* border: 2px solid white; */
+        display: flex;
+        width: 79%;
+        margin: 11% 13% 4% 13%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.813);
+        border-radius: 18px;
+    }
+
+}
+
+
+@media only screen and (min-width:501px) and (max-width:1024px) {
+
+    .left-image {
+        display: none;
+    }
+
+    .flyingbooks {
+
+        width: 100%;
+        height: 100vh;
+        /* margin:0% 5% 0% 5%; */
+        background: url("/images/flyingbooks.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        z-index: -2;
+        right: 0px;
+
+    }
+    .form-container {
+        /* border: 2px solid white; */
+        display: flex;
+        width: 63%;
+        margin: 6% 18% 5% 19%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.813);
+        border-radius: 10px;
+    }
+
+
+}

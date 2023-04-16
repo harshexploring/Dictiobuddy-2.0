@@ -1,0 +1,79 @@
+body{
+    background:linear-gradient(120deg,rgb(0, 0, 0),rgb(83, 16, 16));
+    height:100vh;
+   
+    margin:0px;
+    padding:0px;
+   
+}
+
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px 20px;
+    margin-bottom:15px;
+    position: sticky;
+    top:0px;
+   
+}
+
+#home{
+    text-decoration: none;
+    
+}
+#home a{
+    text-decoration: none;
+    color:rgb(0, 224, 240);
+}
+.account button{
+    color:rgb(0, 224, 240);
+  background-color: rgba(0, 0, 0, 0);
+  cursor:pointer;
+  border:0px;
+}
+
+
+#dropdown{
+   display:none;
+   flex-direction: column;
+   position:absolute;
+   right:0px;
+
+
+}
+#dropdown li{
+    color:white;
+    list-style-type: none;
+    margin:3px 6px 4px 2px;
+    cursor:pointer;
+
+}
+#dropdown li a{
+    color:white;
+    text-decoration:none;
+}
+@media only screen and (min-width:200px) and (max-width:500px){
+    .navbar{
+        
+        position:static;
+       
+       
+    }
+    
+    
+}
+
+
+@media only screen and (min-width:501px) and (max-width:1024px){
+    .navbar{
+      
+        position: static;
+     
+       
+    }
+    
+
+}
+
